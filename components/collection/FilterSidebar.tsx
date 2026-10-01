@@ -1,7 +1,6 @@
 'use client'
 
 import { formatPrice } from '@/lib/utils'
-import { Checkbox } from '@radix-ui/react-checkbox'
 import { Check, RotateCcw } from 'lucide-react'
 
 interface FilterSidebarProps {
