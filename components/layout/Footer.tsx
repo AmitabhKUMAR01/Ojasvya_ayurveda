@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail } from 'lucide-react'
 import { siteConfig } from '@/lib/siteConfig'
 
@@ -62,15 +63,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-4">
-              <div className="flex flex-col leading-none">
-                <span className="font-serif text-2xl font-semibold text-ivory">Herbal Hand</span>
-                <span className="font-serif text-sm text-gold italic tracking-wide">Jadibooti</span>
-              </div>
+            <Link href="/" className="inline-block mb-4" aria-label="Ojasvya Ayurveda — Home">
+              <Image
+                src={siteConfig.logo}
+                alt="Ojasvya Ayurveda"
+                width={160}
+                height={64}
+                className="h-14 w-auto object-contain brightness-0 invert"
+              />
             </Link>
             <p className="font-devanagari text-gold/80 text-sm mb-3">{siteConfig.tagline}</p>
             <p className="text-ivory/70 text-sm leading-relaxed max-w-xs mb-6">
-              Premium Ayurvedic and herbal wellness products. Free shipping across India. Cash on delivery. Free consultation with Hakim Sahab.
+              Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Free shipping across India. Cash on delivery. Free consultation with Hakim Sahab.
             </p>
             <div className="space-y-2">
               <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-sm text-ivory/70 hover:text-gold transition-colors">

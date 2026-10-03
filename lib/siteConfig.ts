@@ -1,19 +1,19 @@
 export const siteConfig = {
-  name: 'Herbal Hand Jadibooti',
-  shortName: 'HHJ',
+  name: 'Ojasvya Ayurveda',
+  shortName: 'OA',
   tagline: 'आयुर्वेद की ताकत, आपकी सेहत',
-  taglineEn: 'The Power of Ayurveda, Your Wellness',
+  taglineEn: 'Pure Herbs. Better Life.',
   description:
-    'Premium Ayurvedic and herbal wellness products. Cash on delivery across India. Free shipping. Consult Hakim Sahab on WhatsApp.',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://herbalhandjadibooti.com',
+    'Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Cash on delivery across India. Free shipping. Consult Hakim Sahab on WhatsApp.',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ojasvyaayurveda.com',
   email: 'Herbalhandjadibooti@gmail.com',
-  phones: ['6396549240', '9760690128', '9520590128'],
-  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '919760690128',
+  phones: ['8433006523'],
+  whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '918433006523',
   whatsappMessage:
     'Namaste! Mujhe apne health concern ke liye sahi product choose karne mein madad chahiye.',
   social: {
-    facebook: 'https://facebook.com/herbalhandjadibooti',
-    instagram: 'https://instagram.com/herbalhandjadibooti',
+    facebook: 'https://facebook.com/ojasvyaayurveda',
+    instagram: 'https://instagram.com/ojasvyaayurveda',
   },
   disclaimer:
     'These statements have not been evaluated by any regulatory authority. These products are not intended to diagnose, treat, cure, or prevent any disease. Please consult a qualified Ayurvedic practitioner before use.',
@@ -31,6 +31,7 @@ export const siteConfig = {
     label: 'Cash on Delivery',
   },
   stockThreshold: 10,
+  logo: '/images/ayurveda/freelance_logo.png',
 } as const
 
 export type SiteConfig = typeof siteConfig

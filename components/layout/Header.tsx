@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { Menu, X, ShoppingCart, Search, User, ChevronDown, Phone } from 'lucide-react'
 import { siteConfig } from '@/lib/siteConfig'
@@ -70,9 +71,15 @@ export default function Header() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex flex-col leading-none group" aria-label="Herbal Hand Jadibooti — Home">
-            <span className="font-serif text-lg md:text-xl font-semibold text-forest group-hover:text-gold transition-colors">Herbal Hand</span>
-            <span className="font-serif text-xs md:text-sm text-gold italic tracking-wide">Jadibooti</span>
+          <Link href="/" className="flex items-center shrink-0" aria-label="Ojasvya Ayurveda — Home">
+            <Image
+              src={siteConfig.logo}
+              alt="Ojasvya Ayurveda — Pure Herbs, Better Life"
+              width={140}
+              height={56}
+              className="h-10 md:h-14 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav */}
