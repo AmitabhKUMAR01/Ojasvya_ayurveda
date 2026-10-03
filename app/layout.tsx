@@ -64,18 +64,9 @@ export const viewport: Viewport = {
   themeColor: '#1F3D2B',
 }
 
-// Browser extensions (e.g. Bitdefender) stamp these attributes onto every element before React hydrates,
-// which floods dev with hydration-mismatch warnings. Dev-only; production React doesn't report attribute mismatches.
-const STRIP_EXTENSION_ATTRS = `(function(){var a=['bis_skin_checked','bis_register'];new MutationObserver(function(m){for(var i=0;i<m.length;i++){var t=m[i].target;if(t.hasAttribute&&t.hasAttribute(m[i].attributeName))t.removeAttribute(m[i].attributeName)}}).observe(document.documentElement,{attributes:true,subtree:true,attributeFilter:a})})()`
-
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-IN" className={`${cormorant.variable} ${dmSans.variable} ${notoSerifDev.variable}`} suppressHydrationWarning>
-      {process.env.NODE_ENV !== 'production' && (
-        <head>
-          <script dangerouslySetInnerHTML={{ __html: STRIP_EXTENSION_ATTRS }} />
-        </head>
-      )}
       <body style={{ backgroundColor: 'var(--color-ivory)', color: 'var(--color-charcoal)' }} suppressHydrationWarning>
         <noscript>
           <style>{'[data-reveal]{opacity:1!important;transform:none!important}'}</style>
