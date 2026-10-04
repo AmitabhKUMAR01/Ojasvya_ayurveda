@@ -54,6 +54,17 @@ export const metadata: Metadata = {
     description: siteConfig.description,
     images: ['/og-image.jpg'],
   },
+  icons: {
+    icon: [
+      { url: '/images/ayurveda/freelance_logo.png' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+      { url: '/images/ayurveda/freelance_logo.png' },
+    ],
+    shortcut: '/images/ayurveda/freelance_logo.png',
+  },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, 'max-video-preview': -1, 'max-image-preview': 'large', 'max-snippet': -1 } },
 }
 
