@@ -58,7 +58,7 @@ export const useCartStore = create<CartState>()(
       getSubtotal: () => get().items.reduce((sum, item) => sum + item.price * item.quantity, 0),
     }),
     {
-      name: 'hhj-cart',
+      name: 'ojasvya-cart',
       storage: createJSONStorage(() => localStorage),
     }
   )

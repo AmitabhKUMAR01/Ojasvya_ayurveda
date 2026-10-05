@@ -6,7 +6,7 @@ export const siteConfig = {
   description:
     'Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Cash on delivery across India. Free shipping. Consult Hakim Sahab on WhatsApp.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ojasvyaayurveda.com',
-  email: 'Herbalhandjadibooti@gmail.com',
+  email: 'ojasvyaayurveda@gmail.com',
   phones: ['8433006523'],
   whatsappNumber: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? '918433006523',
   whatsappMessage:

@@ -6,7 +6,7 @@ import { siteConfig } from '@/lib/siteConfig'
 
 const mockRecentOrders = [
   {
-    orderId: 'HHJ-M9K2-781A',
+    orderId: 'OA-M9K2-781A',
     date: '28 Sep 2026',
     status: 'Delivered',
     total: 3499,
@@ -14,7 +14,7 @@ const mockRecentOrders = [
     paymentMode: 'Cash on Delivery',
   },
   {
-    orderId: 'HHJ-L81A-492B',
+    orderId: 'OA-L81A-492B',
     date: '12 Aug 2026',
     status: 'Delivered',
     total: 899,

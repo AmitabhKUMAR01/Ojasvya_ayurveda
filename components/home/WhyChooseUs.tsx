@@ -32,8 +32,8 @@ export default function WhyChooseUs() {
           <Reveal variant="left" className="lg:sticky lg:top-24">
             <p className="font-sans text-xs uppercase tracking-widest text-gold mb-3">Why Us</p>
             <h2 id="why-heading" className="font-serif text-3xl md:text-4xl lg:text-5xl text-charcoal leading-tight">
-              Why Herbal Hand<br />
-              <span className="italic text-forest">Jadibooti?</span>
+              Why Ojasvya<br />
+              <span className="italic text-forest">Ayurveda?</span>
             </h2>
             <p className="mt-4 text-charcoal/60 text-sm md:text-base leading-relaxed max-w-md">
               In a market full of shortcuts and claims, we do things the old way — with genuine care for your wellness and complete respect for Ayurvedic tradition.

@@ -41,7 +41,7 @@ export const reviews: Review[] = [
     id: 'rev_006', productId: 'prod_017', productSlug: 'liver-kit',
     productTitle: 'Liver Kit', reviewerInitials: 'SK', reviewerName: 'Suresh K.',
     rating: 4, title: 'Good liver support combo',
-    body: 'Doctor ne bola tha liver health pe dhyan do. Herbal Hand ki Liver Kit try ki. 2 mahine baad feel much better. Natural approach pasand aaya.',
+    body: 'Doctor ne bola tha liver health pe dhyan do. Ojasvya Ayurveda ki Liver Kit try ki. 2 mahine baad feel much better. Natural approach pasand aaya.',
     createdAt: '2024-06-28', verifiedPurchase: true, helpfulCount: 15,
   },
   {

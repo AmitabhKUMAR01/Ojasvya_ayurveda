@@ -78,7 +78,7 @@ export default function ContactInformationPage() {
               <div>
                 <strong className="block text-charcoal mb-0.5">Apothecary & Dispatch Facility:</strong>
                 <p className="text-xs text-charcoal/70">
-                  Herbal Hand Jadibooti & Ojasvya Ayurveda Distribution Center, Uttar Pradesh, India.
+                  Ojasvya Ayurveda Distribution Center, Uttar Pradesh, India.
                 </p>
               </div>
             </div>

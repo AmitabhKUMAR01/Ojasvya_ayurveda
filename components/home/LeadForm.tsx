@@ -149,7 +149,7 @@ export default function LeadForm() {
                   aria-describedby={errors.consent ? 'consent-error' : undefined}
                 />
                 <label htmlFor="consent" className="text-xs text-charcoal/60 leading-relaxed cursor-pointer">
-                  I agree to be contacted by Herbal Hand Jadibooti on WhatsApp with personalized product recommendations. My information will not be shared with third parties.
+                  I agree to be contacted by Ojasvya Ayurveda on WhatsApp with personalized product recommendations. My information will not be shared with third parties.
                 </label>
               </div>
               {errors.consent && (

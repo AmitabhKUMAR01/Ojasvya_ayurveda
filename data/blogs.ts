@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
 <p>While Ashwagandha has a long history of traditional use, it is not suitable for everyone. Those with thyroid conditions, autoimmune disorders, or those taking certain medications should consult a qualified practitioner before use.</p>`,
     coverImage: photos.ashwagandhaRoot,
     category: 'Ingredients', tags: ['ashwagandha', 'mens-health', 'adaptogens', 'ayurveda'],
-    readingTimeMinutes: 6, author: 'Herbal Hand Team', publishedAt: '2024-05-15', featured: true,
+    readingTimeMinutes: 6, author: 'Ojasvya Ayurveda Team', publishedAt: '2024-05-15', featured: true,
   },
   {
     id: 'blog_002',
@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
 <p><em>Always consult a qualified Ayurvedic practitioner before starting any herbal regimen.</em></p>`,
     coverImage: photos.fennel,
     category: 'Wellness', tags: ['digestion', 'agni', 'ayurveda', 'gut-health'],
-    readingTimeMinutes: 5, author: 'Herbal Hand Team', publishedAt: '2024-06-01', featured: true,
+    readingTimeMinutes: 5, author: 'Ojasvya Ayurveda Team', publishedAt: '2024-06-01', featured: true,
   },
   {
     id: 'blog_003',
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
 <p><em>Disclaimer: These are traditional uses documented in Ayurvedic texts. Modern clinical evidence is limited. Consult a practitioner before use.</em></p>`,
     coverImage: photos.shilajit,
     category: 'Ingredients', tags: ['shilajit', 'rasayana', 'minerals', 'mens-health'],
-    readingTimeMinutes: 7, author: 'Herbal Hand Team', publishedAt: '2024-06-20', featured: false,
+    readingTimeMinutes: 7, author: 'Ojasvya Ayurveda Team', publishedAt: '2024-06-20', featured: false,
   },
   {
     id: 'blog_004',
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
 <p><em>Disclaimer: These are traditional uses. Individual results vary. Consult a practitioner.</em></p>`,
     coverImage: photos.shatavariFlowers,
     category: "Women's Wellness", tags: ['shatavari', 'womens-health', 'hormonal', 'ayurveda'],
-    readingTimeMinutes: 6, author: 'Herbal Hand Team', publishedAt: '2024-07-05', featured: false,
+    readingTimeMinutes: 6, author: 'Ojasvya Ayurveda Team', publishedAt: '2024-07-05', featured: false,
   },
 ]
 

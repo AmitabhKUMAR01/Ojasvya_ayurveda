@@ -69,7 +69,7 @@ export default function TrackOrderPage() {
                 <input
                   id="orderId"
                   type="text"
-                  placeholder="e.g. HHJ-123456"
+                  placeholder="e.g. OA-123456"
                   {...register('orderId')}
                   className={`w-full px-3.5 py-2.5 text-sm bg-ivory border rounded-lg outline-none focus:border-forest text-charcoal ${
                     errors.orderId ? 'border-terracotta' : 'border-gold/25'
