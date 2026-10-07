@@ -58,35 +58,36 @@ export default function ContactPage() {
                 Connect directly with Hakim Sahab on WhatsApp for 1-on-1 private guidance on choosing the right Ayurvedic regimen.
               </p>
               <a
-                href={waUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 w-full justify-center px-4 py-3 bg-[#25D366] text-white rounded-xl text-xs font-bold hover:bg-[#20c55e] transition-colors shadow-xs"
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="inline-flex items-center gap-2 w-full justify-center px-4 py-3 bg-[#25D366] text-white rounded-xl text-xs font-bold hover:bg-[#20c55e] transition-colors shadow-xs cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
                 Chat with Hakim Sahab
               </a>
             </div>
 
-            {/* Direct Phone Numbers */}
-            <div className="p-6 rounded-2xl bg-ivory border border-gold/15 space-y-3 shadow-xs">
-              <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider">
-                <Phone className="w-4 h-4 text-forest" />
-                <span>Phone Support</span>
+            {/* Direct Phone Numbers (if available) */}
+            {siteConfig.phones.length > 0 && (
+              <div className="p-6 rounded-2xl bg-ivory border border-gold/15 space-y-3 shadow-xs">
+                <div className="flex items-center gap-2 text-gold text-xs font-semibold uppercase tracking-wider">
+                  <Phone className="w-4 h-4 text-forest" />
+                  <span>Phone Support</span>
+                </div>
+                <div className="space-y-2">
+                  {siteConfig.phones.map((phone) => (
+                    <a
+                      key={phone}
+                      href={`tel:${phone}`}
+                      className="block text-sm font-semibold text-charcoal hover:text-forest transition-colors"
+                    >
+                      +91 {phone}
+                    </a>
+                  ))}
+                </div>
+                <p className="text-[11px] text-charcoal/50">Available Monday to Saturday, 9:00 AM – 7:00 PM IST</p>
               </div>
-              <div className="space-y-2">
-                {siteConfig.phones.map((phone) => (
-                  <a
-                    key={phone}
-                    href={`tel:${phone}`}
-                    className="block text-sm font-semibold text-charcoal hover:text-forest transition-colors"
-                  >
-                    +91 {phone}
-                  </a>
-                ))}
-              </div>
-              <p className="text-[11px] text-charcoal/50">Available Monday to Saturday, 9:00 AM – 7:00 PM IST</p>
-            </div>
+            )}
 
             {/* Email & Location */}
             <div className="p-6 rounded-2xl bg-ivory border border-gold/15 space-y-3 shadow-xs">

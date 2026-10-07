@@ -205,10 +205,9 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
 
             {/* Direct Consultation Link */}
             <a
-              href={waProductUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 py-2.5 text-xs font-medium text-forest hover:text-gold transition-colors text-center"
+              href="#"
+              onClick={(e) => e.preventDefault()}
+              className="flex items-center justify-center gap-2 py-2.5 text-xs font-medium text-forest hover:text-gold transition-colors text-center cursor-pointer"
             >
               <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
               <span>Have doubts about this product? Chat with Hakim Sahab</span>

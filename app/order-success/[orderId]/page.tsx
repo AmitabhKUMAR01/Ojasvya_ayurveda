@@ -72,10 +72,8 @@ export default async function OrderSuccessPage({ params }: OrderSuccessPageProps
               Have questions regarding dosage, timing, diet guidelines, or wellness routines? Message us directly on WhatsApp with your Order ID for free guidance.
             </p>
             <a
-              href={waUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl text-xs font-bold hover:bg-[#20c55e] transition-colors shadow-xs"
+              href="#"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] text-white rounded-xl text-xs font-bold hover:bg-[#20c55e] transition-colors shadow-xs cursor-pointer"
             >
               <MessageCircle className="w-4 h-4" />
               Chat on WhatsApp ({orderId})

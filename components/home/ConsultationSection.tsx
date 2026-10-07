@@ -1,3 +1,5 @@
+'use client'
+
 import { MessageCircle, UserCheck, Lock, Zap } from 'lucide-react'
 import { siteConfig } from '@/lib/siteConfig'
 import { getWhatsAppUrl } from '@/lib/utils'
@@ -61,10 +63,9 @@ export default function ConsultationSection() {
 
           {/* CTA */}
           <a
-            href={waUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold text-sm hover:bg-[#20c55e] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(37,211,102,0.6)]"
+            href="#"
+            onClick={(e) => e.preventDefault()}
+            className="inline-flex items-center gap-2.5 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold text-sm hover:bg-[#20c55e] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(37,211,102,0.6)] cursor-pointer"
           >
             <MessageCircle className="w-5 h-5" />
             Chat with Hakim Sahab on WhatsApp

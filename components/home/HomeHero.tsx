@@ -66,10 +66,9 @@ export default function HomeHero() {
                   Shop Now <ArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
                 <a
-                  href={waUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 bg-ivory/10 backdrop-blur-md text-ivory border border-ivory/30 px-7 py-4 rounded-xl font-medium text-sm transition-all duration-300 hover:bg-ivory/20 hover:-translate-y-0.5"
+                  href="#"
+                  onClick={(e) => e.preventDefault()}
+                  className="inline-flex items-center justify-center gap-2 bg-ivory/10 backdrop-blur-md text-ivory border border-ivory/30 px-7 py-4 rounded-xl font-medium text-sm transition-all duration-300 hover:bg-ivory/20 hover:-translate-y-0.5 cursor-pointer"
                 >
                   <MessageCircle className="w-4 h-4" /> Talk to Hakim Sahab
                 </a>

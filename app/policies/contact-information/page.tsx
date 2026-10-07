@@ -35,11 +35,15 @@ export default function ContactInformationPage() {
                 <Phone className="w-4 h-4 text-forest" />
                 <span>Customer Helpline</span>
               </span>
-              {siteConfig.phones.map((phone) => (
-                <a key={phone} href={`tel:${phone}`} className="block text-sm font-semibold text-forest hover:text-gold transition-colors">
-                  +91 {phone}
-                </a>
-              ))}
+              {siteConfig.phones.length > 0 ? (
+                siteConfig.phones.map((phone) => (
+                  <a key={phone} href={`tel:${phone}`} className="block text-sm font-semibold text-forest hover:text-gold transition-colors">
+                    +91 {phone}
+                  </a>
+                ))
+              ) : (
+                <p className="text-xs text-charcoal/70">Available via online support & WhatsApp</p>
+              )}
             </div>
 
             <div className="space-y-2">
@@ -57,8 +61,8 @@ export default function ContactInformationPage() {
                 <MessageCircle className="w-4 h-4 text-[#25D366]" />
                 <span>WhatsApp Consultations</span>
               </span>
-              <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-xs font-bold text-forest underline hover:text-gold">
-                Chat with Hakim Sahab (+91 {siteConfig.phones[0]})
+              <a href="#" className="inline-flex items-center gap-1.5 text-xs font-bold text-forest underline hover:text-gold cursor-pointer">
+                Chat with Hakim Sahab
               </a>
             </div>
 

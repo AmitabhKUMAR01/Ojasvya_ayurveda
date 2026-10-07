@@ -9,7 +9,7 @@ import { getWhatsAppUrl } from '@/lib/utils'
 const announcements = [
   { icon: Truck, text: 'Free Shipping Across India on All Orders', href: '/policies/shipping-policy', external: false },
   { icon: Package, text: 'Cash on Delivery Available — Pay When You Receive', href: '/policies/shipping-policy', external: false },
-  { icon: MessageCircle, text: 'Talk to Hakim Sahab — Free Consultation on WhatsApp', href: getWhatsAppUrl(siteConfig.whatsappNumber, siteConfig.whatsappMessage), external: true },
+  { icon: MessageCircle, text: 'Talk to Hakim Sahab — Free Consultation on WhatsApp', href: '#', external: true, noop: true },
 ]
 
 export default function AnnouncementBar() {
@@ -34,7 +34,11 @@ export default function AnnouncementBar() {
         <div className="flex items-center gap-2">
           <Icon className="w-3.5 h-3.5 shrink-0 text-gold" aria-hidden="true" />
           {current.external ? (
-            <a href={current.href} target="_blank" rel="noopener noreferrer" className="hover:text-gold transition-colors">
+            <a
+              href={current.href}
+              onClick={current.noop ? (e) => e.preventDefault() : undefined}
+              className="hover:text-gold transition-colors cursor-pointer"
+            >
               {current.text}
             </a>
           ) : (

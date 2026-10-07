@@ -41,7 +41,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-serif text-xl text-charcoal font-semibold">4. Contacting Us</h2>
             <p>
-              For any questions regarding your personal information or to request data deletion, contact us at <strong>{siteConfig.email}</strong> or call <strong>+91 {siteConfig.phones[0]}</strong>.
+              For any questions regarding your personal information or to request data deletion, contact us at <strong>{siteConfig.email}</strong>.
             </p>
           </section>
         </div>

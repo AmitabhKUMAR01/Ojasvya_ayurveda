@@ -32,10 +32,9 @@ export default function MobileStickyBar({
 
       <div className="flex items-center gap-2 shrink-0">
         <a
-          href={waUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-3 bg-[#25D366] text-white rounded-xl shadow-xs"
+          href="#"
+          onClick={(e) => e.preventDefault()}
+          className="p-3 bg-[#25D366] text-white rounded-xl shadow-xs cursor-pointer"
           aria-label="Ask questions on WhatsApp"
         >
           <MessageCircle className="w-4 h-4" />

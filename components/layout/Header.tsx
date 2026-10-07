@@ -267,10 +267,9 @@ export default function Header() {
             {/* Quick Actions & Help */}
             <div className="pt-6 pb-6 space-y-4">
               <a
-                href={waUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2.5 w-full bg-[#25D366] text-white py-3.5 px-4 rounded-xl font-medium text-sm shadow-sm"
+                href="#"
+                onClick={(e) => e.preventDefault()}
+                className="flex items-center justify-center gap-2.5 w-full bg-[#25D366] text-white py-3.5 px-4 rounded-xl font-medium text-sm shadow-sm cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
                 Chat with Hakim Sahab
@@ -281,18 +280,22 @@ export default function Header() {
                   <Package className="w-4 h-4" />
                   <span>Free Shipping & Cash on Delivery Across India</span>
                 </div>
-                <p className="text-charcoal/60">
-                  Questions? Call us directly:
-                </p>
-                {siteConfig.phones.map((phone) => (
-                  <a
-                    key={phone}
-                    href={`tel:${phone}`}
-                    className="flex items-center gap-2 text-sm font-semibold text-forest hover:text-gold transition-colors"
-                  >
-                    <Phone className="w-3.5 h-3.5" /> +91 {phone}
-                  </a>
-                ))}
+                {siteConfig.phones.length > 0 && (
+                  <>
+                    <p className="text-charcoal/60">
+                      Questions? Call us directly:
+                    </p>
+                    {siteConfig.phones.map((phone) => (
+                      <a
+                        key={phone}
+                        href={`tel:${phone}`}
+                        className="flex items-center gap-2 text-sm font-semibold text-forest hover:text-gold transition-colors"
+                      >
+                        <Phone className="w-3.5 h-3.5" /> +91 {phone}
+                      </a>
+                    ))}
+                  </>
+                )}
               </div>
             </div>
           </nav>
