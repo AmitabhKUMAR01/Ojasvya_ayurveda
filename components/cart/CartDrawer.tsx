@@ -61,7 +61,7 @@ export default function CartDrawer() {
               {items.map((item) => (
                 <li key={item.productId} className="flex gap-3 py-2">
                   <div className="relative w-20 h-24 rounded-lg overflow-hidden bg-sage/30 shrink-0">
-                    <Image src={item.image} alt={item.title} fill className="object-cover" sizes="80px" />
+                    <Image src={item.image} alt={item.title} fill className="object-contain p-1 bg-ivory-dark/80" sizes="80px" />
                   </div>
                   <div className="flex-1 min-w-0">
                     <Link href={`/products/${item.slug}`} onClick={closeDrawer} className="font-sans text-sm font-medium text-charcoal line-clamp-2 hover:text-forest transition-colors">

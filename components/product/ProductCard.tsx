@@ -50,8 +50,8 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
       {/* Image */}
       <Link
         href={`/products/${product.slug}`}
-        className="block relative overflow-hidden rounded-xl bg-sage/20"
-        style={{ aspectRatio: '4/5' }}
+        className="block relative overflow-hidden rounded-xl bg-ivory-dark/80"
+        style={{ aspectRatio: '1 / 1' }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
         aria-label={`View ${product.title}`}
@@ -62,7 +62,7 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
           fill
           priority={priority}
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-          className={`object-cover transition-all duration-700 ease-out ${hovered ? 'scale-110' : 'scale-100'} ${hovered && hasSecondImage ? 'opacity-0' : 'opacity-100'}`}
+          className={`object-contain p-2 transition-all duration-700 ease-out ${hovered ? 'scale-[1.03]' : 'scale-100'} ${hovered && hasSecondImage ? 'opacity-0' : 'opacity-100'}`}
         />
         {hasSecondImage && (
           <Image
@@ -71,7 +71,7 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
             aria-hidden="true"
             fill
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            className={`object-cover transition-all duration-700 ease-out ${hovered ? 'opacity-100 scale-105' : 'opacity-0 scale-100'}`}
+            className={`object-contain p-2 transition-all duration-700 ease-out ${hovered ? 'opacity-100 scale-[1.02]' : 'opacity-0 scale-100'}`}
           />
         )}
         <span className="absolute inset-x-3 bottom-3 translate-y-3 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100 rounded-lg bg-ivory/90 backdrop-blur-sm py-2 text-center text-xs font-medium text-forest">

@@ -20,8 +20,8 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
     <div className="space-y-4">
       {/* Main Image Display */}
       <div
-        className="relative w-full overflow-hidden rounded-2xl bg-sage/20 border border-gold/10 group cursor-crosshair"
-        style={{ aspectRatio: '4/5' }}
+        className="relative w-full overflow-hidden rounded-2xl bg-ivory-dark/80 border border-gold/10 group"
+        style={{ aspectRatio: '1 / 1' }}
       >
         <Image
           src={activeImage.src}
@@ -29,7 +29,7 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
           fill
           priority
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-contain p-3 transition-transform duration-500 group-hover:scale-[1.02]"
         />
         {images.length > 1 && (
           <div className="absolute bottom-3 right-3 bg-charcoal/70 text-ivory text-xs px-2.5 py-1 rounded-full backdrop-blur-xs font-sans">
@@ -45,7 +45,7 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
             <button
               key={img.src + idx}
               onClick={() => setSelectedIndex(idx)}
-              className={`relative w-20 h-20 rounded-xl overflow-hidden shrink-0 border-2 transition-all ${
+              className={`relative w-20 h-20 rounded-xl overflow-hidden shrink-0 border-2 transition-all bg-ivory-dark/80 ${
                 selectedIndex === idx
                   ? 'border-forest ring-2 ring-forest/20'
                   : 'border-gold/15 opacity-70 hover:opacity-100'
@@ -57,7 +57,7 @@ export default function ProductGallery({ images, title }: ProductGalleryProps) {
                 alt={img.alt || `${title} thumbnail ${idx + 1}`}
                 fill
                 sizes="80px"
-                className="object-cover"
+                className="object-contain p-1"
               />
             </button>
           ))}
