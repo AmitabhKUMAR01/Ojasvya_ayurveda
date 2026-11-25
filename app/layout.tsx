@@ -7,6 +7,7 @@ import Footer from '@/components/layout/Footer'
 import AnnouncementBar from '@/components/layout/AnnouncementBar'
 import WhatsAppButton from '@/components/layout/WhatsAppButton'
 import CartDrawer from '@/components/cart/CartDrawer'
+import CartBar from '@/components/cart/CartBar'
 import '@/app/globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -100,6 +101,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <Footer />
         <WhatsAppButton />
+        <CartBar />
         <CartDrawer />
 
         <Toaster

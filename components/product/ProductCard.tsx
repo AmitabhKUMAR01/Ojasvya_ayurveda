@@ -17,7 +17,7 @@ interface ProductCardProps {
 export default function ProductCard({ product, priority = false }: ProductCardProps) {
   const [hovered, setHovered] = useState(false)
   const [added, setAdded] = useState(false)
-  const { addItem, openDrawer } = useCartStore()
+  const { addItem } = useCartStore()
 
   const discount = product.compareAtPrice
     ? calculateDiscount(product.price, product.compareAtPrice)
@@ -41,7 +41,6 @@ export default function ProductCard({ product, priority = false }: ProductCardPr
 
     setAdded(true)
     toast.success(`${product.shortTitle} added to cart`)
-    openDrawer()
     setTimeout(() => setAdded(false), 2000)
   }
 

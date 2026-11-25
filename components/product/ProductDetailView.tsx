@@ -21,7 +21,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
   const router = useRouter()
   const [quantity, setQuantity] = useState(1)
   const [added, setAdded] = useState(false)
-  const { addItem, openDrawer } = useCartStore()
+  const { addItem } = useCartStore()
 
   const discount = product.compareAtPrice
     ? calculateDiscount(product.price, product.compareAtPrice)
@@ -51,7 +51,6 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
 
     setAdded(true)
     toast.success(`${quantity} × ${product.shortTitle} added to cart`)
-    openDrawer()
     setTimeout(() => setAdded(false), 2000)
   }
 

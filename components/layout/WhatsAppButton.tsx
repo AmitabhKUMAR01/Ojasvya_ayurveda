@@ -3,14 +3,20 @@
 import { MessageCircle } from 'lucide-react'
 import { siteConfig } from '@/lib/siteConfig'
 import { getWhatsAppUrl } from '@/lib/utils'
+import { useCartStore } from '@/store/cart'
 
 export default function WhatsAppButton() {
+  const cartCount = useCartStore((s) => s.getTotalItems())
   const url = getWhatsAppUrl(siteConfig.whatsappNumber, siteConfig.whatsappMessage)
+
   return (
     <a
-      href="#"
-      onClick={(e) => e.preventDefault()}
-      className="fixed bottom-6 right-4 z-40 flex items-center bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95 group overflow-hidden cursor-pointer"
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`fixed right-4 z-40 flex items-center bg-[#25D366] text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 active:scale-95 group overflow-hidden ${
+        cartCount > 0 ? 'bottom-24' : 'bottom-6'
+      }`}
       aria-label="Chat with our support team on WhatsApp"
     >
       <span className="max-w-0 group-hover:max-w-xs overflow-hidden transition-all duration-300 ease-out whitespace-nowrap text-sm font-medium pl-0 group-hover:pl-4 hidden sm:block">
