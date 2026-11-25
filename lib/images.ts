@@ -37,11 +37,26 @@ export const images = {
     alt: photos.heroRemedies.alt,
   },
   collections: {
-    'digestive-health-detox': photos.fenugreek,
-    'male-stamina-kits': photos.ashwagandhaRoot,
-    'mens-vitamins-supplements': photos.herbalCapsules,
-    'womens-supplements': photos.shatavariFlowers,
-    combos: photos.ayurvedaBowls,
+    'digestive-health-detox': {
+      src: '/images/products/livirex-ds-syrup-bottle-and-box-front.jpg',
+      alt: 'Livirex DX Syrup — digestive health and detox',
+    },
+    'male-stamina-kits': {
+      src: '/images/products/moringa-powder-jar-front.jpg',
+      alt: 'Moringa Powder — energy and vitality',
+    },
+    'mens-vitamins-supplements': {
+      src: '/images/products/madhurex-capsules-bottle-and-capsules.jpg',
+      alt: 'Madhurex Capsules — men\'s supplements',
+    },
+    'womens-supplements': {
+      src: '/images/products/aloe-vera-juice-bottle-front.jpg',
+      alt: 'Aloe Vera Juice — women\'s wellness',
+    },
+    combos: {
+      src: '/images/products/madhurex-churna-product-benefits-collage.jpg',
+      alt: 'Madhurex Combo Pack',
+    },
   },
   ingredients: {
     ashwagandha: photos.ashwagandhaSpoons,

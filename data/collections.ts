@@ -1,41 +1,57 @@
 import type { CollectionMeta } from '@/types/product'
-import { images } from '@/lib/images'
+
+const P = '/images/products'
 
 export const collections: CollectionMeta[] = [
   {
     slug: 'digestive-health-detox',
     title: 'Digestive Health & Detox',
     description:
-      'Traditionally used Ayurvedic formulations to support healthy digestion, liver function, and gentle detoxification.',
-    image: images.collections['digestive-health-detox'],
+      'Livirex liver tonic, Madhurex blood-sugar support and Aloe Vera juice — formulated to support digestion, liver health and gentle detoxification.',
+    image: {
+      src: `${P}/livirex-ds-syrup-bottle-and-box-front.jpg`,
+      alt: 'Livirex DX Syrup — liver support collection',
+    },
   },
   {
     slug: 'male-stamina-kits',
-    title: "Men's Stamina Kits",
+    title: 'Energy & Vitality',
     description:
-      "Curated Ayurvedic kits traditionally formulated to support men's vitality, stamina, and overall wellness.",
-    image: images.collections['male-stamina-kits'],
+      'Daily nutrition and vitality support with nutrient-rich Moringa Powder — Nature\'s Daily Nutrition for sustained energy.',
+    image: {
+      src: `${P}/moringa-powder-jar-front.jpg`,
+      alt: 'Ojasvya Moringa Powder — energy and vitality',
+    },
   },
   {
     slug: 'mens-vitamins-supplements',
     title: "Men's Vitamins & Supplements",
     description:
-      "Single-herb and multi-herb Ayurvedic formulations traditionally used to support men's health and vitality.",
-    image: images.collections['mens-vitamins-supplements'],
+      'Madhurex formulations and Moringa Powder — Ayurvedic support for metabolic wellness, immunity and everyday nutrition.',
+    image: {
+      src: `${P}/madhurex-capsules-bottle-and-capsules.jpg`,
+      alt: 'Madhurex Capsules — men\'s wellness supplements',
+    },
   },
   {
     slug: 'womens-supplements',
-    title: "Women's Supplements",
+    title: "Women's Wellness",
     description:
-      "Gentle Ayurvedic formulations traditionally used to support women's reproductive health, hormonal balance, and overall vitality.",
-    image: images.collections['womens-supplements'],
+      'Aloe Vera Juice and Moringa Powder for glowing skin, healthy hair, immunity and daily nourishment.',
+    image: {
+      src: `${P}/aloe-vera-juice-bottle-front.jpg`,
+      alt: 'Ojasvya Aloe Vera Juice — women\'s wellness',
+    },
   },
   {
     slug: 'combos',
     title: 'Combo Kits',
     description:
-      'Value-for-money curated combo kits bringing together synergistic Ayurvedic formulations for comprehensive wellness support.',
-    image: images.collections['combos'],
+      'Value combo packs like Madhurex Capsules + Powder for comprehensive Ayurvedic wellness support.',
+    image: {
+      src: `${P}/madhurex-churna-product-benefits-collage.jpg`,
+      alt: 'Madhurex Combo Pack — capsules and powder',
+    },
   },
 ]
 

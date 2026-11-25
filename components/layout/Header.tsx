@@ -16,10 +16,10 @@ const navLinks = [
     label: 'Products',
     children: [
       { href: '/collections/all', label: 'All Products' },
-      { href: '/collections/mens-vitamins-supplements', label: "Men's Supplements" },
-      { href: '/collections/male-stamina-kits', label: "Men's Stamina Kits" },
-      { href: '/collections/womens-supplements', label: "Women's Supplements" },
       { href: '/collections/digestive-health-detox', label: 'Digestive & Detox' },
+      { href: '/collections/mens-vitamins-supplements', label: "Men's Supplements" },
+      { href: '/collections/male-stamina-kits', label: 'Energy & Vitality' },
+      { href: '/collections/womens-supplements', label: "Women's Wellness" },
       { href: '/collections/combos', label: 'Combo Kits' },
     ],
   },

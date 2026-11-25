@@ -42,3 +42,9 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# local product asset archives / scratch (do NOT ignore public/images)
+_extracted/
+*.7z
+_copy_product_images.py
+/images/
