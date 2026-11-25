@@ -29,7 +29,7 @@ const milestones = [
   {
     year: 'Modern Apothecary',
     title: 'Direct to Doorstep Across India',
-    desc: 'Offering accessible, discreet, Cash on Delivery wellness formulations with free personal consultations from Hakim Sahab to thousands of households nationwide.',
+    desc: 'Offering accessible, discreet, Cash on Delivery wellness formulations with free guidance from our support team to thousands of households nationwide.',
   },
 ]
 
@@ -153,7 +153,7 @@ export default function AboutPage() {
               href="/contact"
               className="px-8 py-3.5 border border-forest text-forest rounded-xl text-sm font-semibold hover:bg-sage/30 transition-colors"
             >
-              Consult with Hakim Sahab
+              Chat with our support team
             </Link>
           </div>
         </div>

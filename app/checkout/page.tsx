@@ -399,7 +399,7 @@ export default function CheckoutPage() {
               </div>
               <div className="flex items-center gap-2">
                 <ShieldCheck className="w-3.5 h-3.5 text-gold shrink-0" />
-                <span>Free consultation with Hakim Sahab anytime</span>
+                <span>Free guidance from our support team anytime</span>
               </div>
             </div>
           </div>

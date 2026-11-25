@@ -44,7 +44,7 @@ export default function RefundPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-serif text-xl text-charcoal font-semibold">4. Damaged or Incorrect Dispatches</h2>
             <p>
-              If you received a damaged container, leaked bottle, or incorrect formulation, share an unboxing photo or video with our support team or Hakim Sahab within 48 hours of delivery for an immediate free replacement.
+              If you received a damaged container, leaked bottle, or incorrect formulation, share an unboxing photo or video with our support team within 48 hours of delivery for an immediate free replacement.
             </p>
           </section>
         </div>

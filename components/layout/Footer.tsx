@@ -74,7 +74,7 @@ export default function Footer() {
             </Link>
             <p className="font-devanagari text-gold/80 text-sm mb-3">{siteConfig.tagline}</p>
             <p className="text-ivory/70 text-sm leading-relaxed max-w-xs mb-6">
-              Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Free shipping across India. Cash on delivery. Free consultation with Hakim Sahab.
+              Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Free shipping across India. Cash on delivery. Free guidance from our support team.
             </p>
             <div className="space-y-2">
               <a href={`mailto:${siteConfig.email}`} className="flex items-center gap-2 text-sm text-ivory/70 hover:text-gold transition-colors">

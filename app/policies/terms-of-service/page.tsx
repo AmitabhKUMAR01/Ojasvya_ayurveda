@@ -19,7 +19,7 @@ export default function TermsOfServicePage() {
           <section className="space-y-2">
             <h2 className="font-serif text-xl text-charcoal font-semibold">1. Acceptance of Terms</h2>
             <p>
-              By accessing and using this website, ordering products via Cash on Delivery, or initiating a consultation with Hakim Sahab, you agree to comply with and be bound by these Terms of Service.
+              By accessing and using this website, ordering products via Cash on Delivery, or initiating a chat with our support team, you agree to comply with and be bound by these Terms of Service.
             </p>
           </section>
 

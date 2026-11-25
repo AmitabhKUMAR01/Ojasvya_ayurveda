@@ -117,7 +117,7 @@ export default function ProductAccordion({ product }: ProductAccordionProps) {
           <div className="p-4 pt-0 text-sm text-charcoal/80 space-y-3 border-t border-gold/10">
             <p className="mt-3 leading-relaxed">{product.howToUse}</p>
             <p className="text-xs text-charcoal/50 italic">
-              Note: For personalized dosage tailored to your Prakriti and lifestyle, feel free to WhatsApp Hakim Sahab directly.
+              Note: For personalized dosage tailored to your Prakriti and lifestyle, feel free to WhatsApp our support team.
             </p>
           </div>
         )}

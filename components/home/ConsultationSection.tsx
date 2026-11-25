@@ -9,12 +9,12 @@ const benefits = [
   {
     icon: UserCheck,
     title: 'Personalized Advice',
-    desc: 'Hakim Sahab reviews your specific concern and suggests the right formulation for you.',
+    desc: 'Our support team reviews your concern and suggests the right product for you.',
   },
   {
     icon: Lock,
     title: '100% Private',
-    desc: 'Your health concern stays between you and Hakim Sahab. Complete confidentiality.',
+    desc: 'Your health concern stays between you and our support team. Complete confidentiality.',
   },
   {
     icon: Zap,
@@ -39,7 +39,7 @@ export default function ConsultationSection() {
             Sahi Product Choose Karne<br className="hidden md:block" /> Mein Madad Chahiye?
           </h2>
           <p className="text-ivory/70 text-sm md:text-base mb-10 max-w-xl mx-auto">
-            Not sure which product is right for your concern? Get free, personalized guidance from Hakim Sahab — directly on WhatsApp.
+            Not sure which product is right for your concern? Get free, personalized guidance from our support team — directly on WhatsApp.
           </p>
           </Reveal>
 
@@ -68,7 +68,7 @@ export default function ConsultationSection() {
             className="inline-flex items-center gap-2.5 bg-[#25D366] text-white px-8 py-4 rounded-xl font-semibold text-sm hover:bg-[#20c55e] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_12px_30px_-8px_rgba(37,211,102,0.6)] cursor-pointer"
           >
             <MessageCircle className="w-5 h-5" />
-            Chat with Hakim Sahab on WhatsApp
+            Chat with our support team on WhatsApp
           </a>
           <p className="text-ivory/30 text-xs mt-3">Free. No registration. Reply within 24 hours.</p>
         </div>

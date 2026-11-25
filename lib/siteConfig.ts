@@ -4,7 +4,7 @@ export const siteConfig = {
   tagline: 'आयुर्वेद की ताकत, आपकी सेहत',
   taglineEn: 'Pure Herbs. Better Life.',
   description:
-    'Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Cash on delivery across India. Free shipping. Consult Hakim Sahab on WhatsApp.',
+    'Premium Ayurvedic and herbal wellness products by Ojasvya Ayurveda. Cash on delivery across India. Free shipping. Chat with our support team on WhatsApp.',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://ojasvyaayurveda.com',
   email: 'ojasvyaayurveda@gmail.com',
   phones: [] as string[],

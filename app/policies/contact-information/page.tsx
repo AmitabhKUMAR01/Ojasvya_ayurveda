@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ContactInformationPage() {
   const waUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    'Namaste Hakim Sahab! Mujhe contact information ke bare mein poochna hai.'
+    'Hi! I need help with contact information.'
   )
 
   return (
@@ -62,7 +62,7 @@ export default function ContactInformationPage() {
                 <span>WhatsApp Consultations</span>
               </span>
               <a href="#" className="inline-flex items-center gap-1.5 text-xs font-bold text-forest underline hover:text-gold cursor-pointer">
-                Chat with Hakim Sahab
+                Chat with our support team
               </a>
             </div>
 

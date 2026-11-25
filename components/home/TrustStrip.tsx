@@ -20,7 +20,7 @@ const trustPoints = [
   {
     icon: MessageCircle,
     title: 'WhatsApp Support',
-    desc: 'Free advice from Hakim Sahab',
+    desc: 'Free guidance from our support team',
   },
 ]
 

@@ -19,7 +19,7 @@ const reasons = [
   {
     num: '04',
     title: 'Human Support, Not Bots',
-    desc: 'When you reach out, you speak to Hakim Sahab — a real person with genuine expertise in Ayurvedic formulations. Not an automated response.',
+    desc: 'When you reach out, you chat with our support team — real people ready to help you choose the right Ayurvedic products. Not an automated response.',
   },
 ]
 

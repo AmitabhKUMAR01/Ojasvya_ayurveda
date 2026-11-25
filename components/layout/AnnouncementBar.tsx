@@ -9,7 +9,7 @@ import { getWhatsAppUrl } from '@/lib/utils'
 const announcements = [
   { icon: Truck, text: 'Free Shipping Across India on All Orders', href: '/policies/shipping-policy', external: false },
   { icon: Package, text: 'Cash on Delivery Available — Pay When You Receive', href: '/policies/shipping-policy', external: false },
-  { icon: MessageCircle, text: 'Talk to Hakim Sahab — Free Consultation on WhatsApp', href: '#', external: true, noop: true },
+  { icon: MessageCircle, text: 'Chat with our support team — Free guidance on WhatsApp', href: '#', external: true, noop: true },
 ]
 
 export default function AnnouncementBar() {

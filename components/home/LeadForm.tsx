@@ -58,7 +58,7 @@ export default function LeadForm() {
               Get Personalized Advice
             </h2>
             <p className="text-sm text-charcoal/60">
-              Share your concern and Hakim Sahab will personally recommend the right Ayurvedic approach for you.
+              Share your concern and our support team will recommend the right Ayurvedic approach for you.
             </p>
           </div>
 
@@ -67,7 +67,7 @@ export default function LeadForm() {
               <CheckCircle className="w-12 h-12 text-forest mx-auto mb-4" />
               <h3 className="font-serif text-2xl text-charcoal mb-2">Request Received!</h3>
               <p className="text-charcoal/60 text-sm">
-                Hakim Sahab will reach out to you on WhatsApp within 24 hours.
+                Our support team will reach out to you on WhatsApp within 24 hours.
               </p>
             </div>
           ) : (

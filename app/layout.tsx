@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ['Ayurvedic products', 'herbal supplements', 'ashwagandha', 'shilajit', 'safed musli', 'Ayurveda India', 'COD ayurvedic', 'men wellness', 'women wellness', 'digestive health', 'Hakim Sahab'],
+  keywords: ['Ayurvedic products', 'herbal supplements', 'ashwagandha', 'shilajit', 'safed musli', 'Ayurveda India', 'COD ayurvedic', 'men wellness', 'women wellness', 'digestive health', 'support team'],
   openGraph: {
     type: 'website', locale: 'en_IN', url: siteConfig.url, siteName: siteConfig.name,
     title: `${siteConfig.name} — Premium Ayurvedic Wellness`,

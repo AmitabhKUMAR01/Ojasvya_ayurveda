@@ -14,7 +14,7 @@ export default async function OrderSuccessPage({ params }: OrderSuccessPageProps
 
   const waUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    `Namaste Hakim Sahab! Maine naya order place kiya hai (Order ID: ${orderId}). Mujhe iske bare mein salah chahiye.`
+    `Hi! I just placed a new order (Order ID: ${orderId}). Mujhe iske bare mein salah chahiye.`
   )
 
   return (
@@ -62,11 +62,11 @@ export default async function OrderSuccessPage({ params }: OrderSuccessPageProps
             </p>
           </div>
 
-          {/* Hakim Sahab WhatsApp CTA */}
+          {/* our support team WhatsApp CTA */}
           <div className="p-5 rounded-xl bg-forest text-ivory space-y-3">
             <div className="flex items-center justify-center gap-2 font-serif text-lg font-medium">
               <MessageCircle className="w-5 h-5 text-gold" />
-              <span>Connect with Hakim Sahab</span>
+              <span>Chat with our support team</span>
             </div>
             <p className="text-xs text-ivory/80 max-w-md mx-auto leading-relaxed">
               Have questions regarding dosage, timing, diet guidelines, or wellness routines? Message us directly on WhatsApp with your Order ID for free guidance.

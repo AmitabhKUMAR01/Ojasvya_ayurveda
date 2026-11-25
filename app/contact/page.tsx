@@ -22,7 +22,7 @@ export default function ContactPage() {
 
   const waUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    'Namaste Hakim Sahab! Mujhe Ayurvedic consult ke liye baat karni hai.'
+    'Hi! I would like product guidance from your support team.'
   )
 
   const onSubmit = async (data: ContactFormData) => {
@@ -40,7 +40,7 @@ export default function ContactPage() {
           <p className="font-sans text-xs uppercase tracking-widest text-gold font-semibold">Get in Touch</p>
           <h1 className="font-serif text-3xl md:text-5xl text-charcoal">Contact & Consultations</h1>
           <p className="text-sm text-charcoal/70 max-w-lg mx-auto">
-            Have questions about a formulation, dosage, or your order? Connect directly with Hakim Sahab and our support team.
+            Have questions about a formulation, dosage, or your order? Chat with our support team on WhatsApp.
           </p>
         </div>
 
@@ -55,7 +55,7 @@ export default function ContactPage() {
               </div>
               <h3 className="font-serif text-ivory/80 text-2xl font-medium">Free WhatsApp Guidance</h3>
               <p className="text-xs text-ivory/80 leading-relaxed">
-                Connect directly with Hakim Sahab on WhatsApp for 1-on-1 private guidance on choosing the right Ayurvedic regimen.
+                Chat with our support team on WhatsApp for private guidance on choosing the right Ayurvedic products.
               </p>
               <a
                 href="#"
@@ -63,7 +63,7 @@ export default function ContactPage() {
                 className="inline-flex items-center gap-2 w-full justify-center px-4 py-3 bg-[#25D366] text-white rounded-xl text-xs font-bold hover:bg-[#20c55e] transition-colors shadow-xs cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
-                Chat with Hakim Sahab
+                Chat with our support team
               </a>
             </div>
 

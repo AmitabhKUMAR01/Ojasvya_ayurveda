@@ -20,7 +20,7 @@ export default function PrivacyPolicyPage() {
           <section className="space-y-2">
             <h2 className="font-serif text-xl text-charcoal font-semibold">1. Information We Collect</h2>
             <p>
-              When you place a Cash on Delivery (COD) order or request an Ayurvedic consultation with Hakim Sahab on WhatsApp, we collect personal information you provide to us, including your full name, 10-digit Indian mobile number, delivery address, city, state, postal pincode, and optional email address.
+              When you place a Cash on Delivery (COD) order or request an Ayurvedic chat with our support team on WhatsApp, we collect personal information you provide to us, including your full name, 10-digit Indian mobile number, delivery address, city, state, postal pincode, and optional email address.
             </p>
           </section>
 

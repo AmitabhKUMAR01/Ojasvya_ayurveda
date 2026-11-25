@@ -272,7 +272,7 @@ export default function Header() {
                 className="flex items-center justify-center gap-2.5 w-full bg-[#25D366] text-white py-3.5 px-4 rounded-xl font-medium text-sm shadow-sm cursor-pointer"
               >
                 <MessageCircle className="w-4 h-4" />
-                Chat with Hakim Sahab
+                Chat with our support team
               </a>
 
               <div className="rounded-xl bg-sage/30 p-4 border border-gold/15 space-y-2 text-xs text-charcoal/80">

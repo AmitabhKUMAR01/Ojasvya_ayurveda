@@ -32,7 +32,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
 
   const waProductUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    `Namaste Hakim Sahab! Mujhe "${product.title}" ke bare mein salah chahiye.`
+    `Hi! I have a question about "${product.title}" ke bare mein salah chahiye.`
   )
 
   const handleAddToCart = () => {
@@ -129,7 +129,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
           {/* Real Stock Status (No Fake Urgency) */}
           {isOutOfStock ? (
             <div className="p-3 rounded-lg bg-charcoal/10 text-charcoal/80 text-xs font-medium">
-              Currently Out of Stock. Tap below to notify Hakim Sahab on WhatsApp.
+              Currently Out of Stock. Tap below to notify our support team on WhatsApp.
             </div>
           ) : isLowStock ? (
             <div className="flex items-center gap-2 text-xs font-medium text-terracotta">
@@ -210,7 +210,7 @@ export default function ProductDetailView({ product }: ProductDetailViewProps) {
               className="flex items-center justify-center gap-2 py-2.5 text-xs font-medium text-forest hover:text-gold transition-colors text-center cursor-pointer"
             >
               <MessageCircle className="w-3.5 h-3.5 text-[#25D366]" />
-              <span>Have doubts about this product? Chat with Hakim Sahab</span>
+              <span>Have doubts about this product? Chat with our support team</span>
             </a>
           </div>
 

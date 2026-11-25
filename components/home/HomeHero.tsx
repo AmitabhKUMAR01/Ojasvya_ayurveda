@@ -55,7 +55,7 @@ export default function HomeHero() {
               </h1>
 
               <p className="text-ivory/80 text-sm md:text-lg mb-8 leading-relaxed max-w-md animate-fade-up" style={fadeUp(0.45)}>
-                Classical herbs like Ashwagandha, Shilajit and Shatavari — free shipping across India, cash on delivery, and free consultation with Hakim Sahab.
+                Classical herbs like Ashwagandha, Shilajit and Shatavari — free shipping across India, cash on delivery, and free guidance from our support team.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 animate-fade-up" style={fadeUp(0.6)}>
@@ -70,7 +70,7 @@ export default function HomeHero() {
                   onClick={(e) => e.preventDefault()}
                   className="inline-flex items-center justify-center gap-2 bg-ivory/10 backdrop-blur-md text-ivory border border-ivory/30 px-7 py-4 rounded-xl font-medium text-sm transition-all duration-300 hover:bg-ivory/20 hover:-translate-y-0.5 cursor-pointer"
                 >
-                  <MessageCircle className="w-4 h-4" /> Talk to Hakim Sahab
+                  <MessageCircle className="w-4 h-4" /> Chat with our support team
                 </a>
               </div>
             </div>
