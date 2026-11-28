@@ -31,7 +31,7 @@ export const siteConfig = {
     label: 'Cash on Delivery',
   },
   stockThreshold: 10,
-  logo: '/images/ayurveda/freelance_logo.png',
+  logo: '/images/ayurveda/ojasvya-logo.png',
 } as const
 
 export type SiteConfig = typeof siteConfig

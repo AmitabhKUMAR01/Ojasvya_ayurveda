@@ -16,11 +16,11 @@ const navLinks = [
     label: 'Products',
     children: [
       { href: '/collections/all', label: 'All Products' },
+      { href: '/collections/combos', label: 'Combo Kits' },
       { href: '/collections/digestive-health-detox', label: 'Digestive & Detox' },
       { href: '/collections/mens-vitamins-supplements', label: "Men's Supplements" },
       { href: '/collections/male-stamina-kits', label: 'Energy & Vitality' },
       { href: '/collections/womens-supplements', label: "Women's Wellness" },
-      { href: '/collections/combos', label: 'Combo Kits' },
     ],
   },
   { href: '/about', label: 'About Us' },
@@ -88,17 +88,29 @@ export default function Header() {
       className={`sticky top-0 z-50 w-full transition-all duration-300 border-b border-gold/10 ${isScrolled ? 'backdrop-blur-sm shadow-sm' : ''} ${isVisible || isMobileMenuOpen ? 'translate-y-0' : '-translate-y-full'}`}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16 md:h-20">
+        <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link href="/" className="flex items-center shrink-0" aria-label="Ojasvya Ayurveda — Home">
+          <Link
+            href="/"
+            className="flex items-center shrink-0 -ml-1 py-1"
+            aria-label="Ojasvya Ayurveda — Home"
+          >
             <Image
               src={siteConfig.logo}
               alt="Ojasvya Ayurveda — Pure Herbs, Better Life"
-              width={140}
-              height={56}
-              className="h-10 md:h-14 w-auto object-contain"
+              width={200}
+              height={200}
+              className="h-16 w-16 sm:h-[4.5rem] sm:w-[4.5rem] md:h-20 md:w-20 object-contain drop-shadow-sm"
               priority
             />
+            <span className="ml-2 hidden sm:flex flex-col leading-tight">
+              <span className="font-serif text-lg md:text-xl font-semibold text-forest tracking-tight">
+                Ojasvya
+              </span>
+              <span className="text-[10px] md:text-xs uppercase tracking-[0.18em] text-gold font-medium">
+                Ayurveda
+              </span>
+            </span>
           </Link>
 
           {/* Desktop Nav */}

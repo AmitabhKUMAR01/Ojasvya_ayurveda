@@ -9,8 +9,8 @@ export const products: Product[] = [
     title: 'Madhurex Churna — Diabetic Powder',
     shortTitle: 'Madhurex Churna',
     collections: ['digestive-health-detox', 'mens-vitamins-supplements'],
-    price: 549,
-    compareAtPrice: 699,
+    price: 1150,
+    compareAtPrice: 1400,
     images: [
       {
         src: `${P}/madhurex-churna-jar-and-label-details.jpg`,
@@ -103,7 +103,7 @@ export const products: Product[] = [
     ],
     isCombo: false,
     createdAt: '2026-10-01',
-    bestSellerRank: 2,
+    bestSellerRank: 3,
   },
 
   {
@@ -112,8 +112,8 @@ export const products: Product[] = [
     title: 'Madhurex Capsules — For Healthy Blood Sugar',
     shortTitle: 'Madhurex Capsules',
     collections: ['digestive-health-detox', 'mens-vitamins-supplements'],
-    price: 499,
-    compareAtPrice: 649,
+    price: 399,
+    compareAtPrice: 499,
     images: [
       {
         src: `${P}/madhurex-capsules-bottle-and-capsules.jpg`,
@@ -210,7 +210,7 @@ export const products: Product[] = [
     ],
     isCombo: false,
     createdAt: '2026-10-01',
-    bestSellerRank: 1,
+    bestSellerRank: 2,
   },
 
   {
@@ -219,8 +219,8 @@ export const products: Product[] = [
     title: 'Madhurex Combo Pack — Capsules + Powder',
     shortTitle: 'Madhurex Combo Pack',
     collections: ['combos', 'digestive-health-detox'],
-    price: 949,
-    compareAtPrice: 1248,
+    price: 1600,
+    compareAtPrice: 2114,
     images: [
       {
         src: `${P}/madhurex-capsules-box-and-bottle.jpg`,
@@ -285,7 +285,7 @@ export const products: Product[] = [
     ],
     isCombo: true,
     createdAt: '2026-10-01',
-    bestSellerRank: 3,
+    bestSellerRank: 1,
   },
 
   {
@@ -294,8 +294,8 @@ export const products: Product[] = [
     title: 'Livirex DX Syrup — Liver Support',
     shortTitle: 'Livirex DX Syrup',
     collections: ['digestive-health-detox'],
-    price: 349,
-    compareAtPrice: 449,
+    price: 180,
+    compareAtPrice: 215,
     images: [
       {
         src: `${P}/livirex-ds-syrup-bottle-and-box-front.jpg`,
@@ -382,8 +382,8 @@ export const products: Product[] = [
     title: 'Ojasvya Moringa Powder — Nature\'s Daily Nutrition',
     shortTitle: 'Moringa Powder',
     collections: ['mens-vitamins-supplements', 'womens-supplements', 'male-stamina-kits'],
-    price: 449,
-    compareAtPrice: 599,
+    price: 550,
+    compareAtPrice: 600,
     images: [
       {
         src: `${P}/moringa-powder-jar-front.jpg`,
@@ -464,12 +464,96 @@ export const products: Product[] = [
 
   {
     id: 'prod_006',
+    slug: 'beetroot-powder',
+    title: "Ojasvya Beetroot Powder — Nature's Daily Nutrition",
+    shortTitle: 'Beetroot Powder',
+    collections: ['mens-vitamins-supplements', 'womens-supplements', 'digestive-health-detox'],
+    price: 499,
+    compareAtPrice: 550,
+    images: [
+      {
+        src: `${P}/beetroot-powder-jar-front.jpg`,
+        alt: 'Ojasvya Beetroot Powder jar — Pure & Natural, bright magenta powder with black lid',
+      },
+      {
+        src: `${P}/beetroot-powder-benefits-collage.jpg`,
+        alt: 'Beetroot Powder benefits collage — blood circulation, immunity, energy, heart health, skin glow',
+      },
+      {
+        src: `${P}/beetroot-powder-packaging-and-usage.jpg`,
+        alt: 'Beetroot Powder box, jar and smoothie usage — add to smoothie, juice or recipes',
+      },
+      {
+        src: `${P}/beetroot-powder-hero.jpg`,
+        alt: 'Ojasvya Beetroot Powder hero shot with fresh beetroots and wooden bowl of powder',
+      },
+      {
+        src: `${P}/beetroot-powder-lifestyle.jpg`,
+        alt: 'Beetroot Powder lifestyle image — healthy you naturally',
+      },
+    ],
+    stock: 85,
+    rating: 4.7,
+    reviewCount: 108,
+    tags: ['beetroot', 'powder', 'blood', 'heart', 'immunity', 'energy', 'skin', 'hair', 'natural'],
+    shortDescription:
+      "100% natural plant-based Beetroot Powder — Nature's Daily Nutrition. Supports healthy blood, heart health, immunity and energy. Nourish skin & hair from within.",
+    fullDescription:
+      "Ojasvya Beetroot Powder is Nature's Daily Nutrition — a pure & natural plant-based beetroot powder crafted to nourish skin and hair from within for youthful glow and thickness, while supporting everyday vitality.\n\nKey benefits: Improves Blood Circulation | Boosts Immunity | Increases Energy | Supports Heart Health | Enhances Skin Glow.\n\nAlso valued for purifying blood, better digestion, glowing skin and strong hair. Ideal as a daily mix in smoothies, juice or recipes.\n\nIngredients: 100% Beetroot Powder.\n\nApprox. nutrition per 100g (as on pack): Energy 340 Kcal | Protein 13g | Carbohydrates 70g | Dietary Fiber 20g | Total Fat 1.0g | Trans Fat 0g | Iron 0.80 mg | Calcium 16 mg.\n\nPacked & Marketed by Ojasvya Ayurveda, Bareilly, Uttar Pradesh 243001. Email: Ojasvyaayurveda@gmail.com. Store in a cool, dry & hygienic place.\n\nDisclaimer: This product is not intended to diagnose, treat, cure, or prevent any disease. Individual results may vary. Consult your healthcare provider before use.",
+    benefits: [
+      'Improves blood circulation',
+      'Supports heart health',
+      'Boosts immunity',
+      'Increases energy naturally',
+      'Enhances skin glow',
+      'Nourishes skin and hair from within',
+      'Supports better digestion',
+      '100% natural plant-based — Pure & Natural',
+    ],
+    ingredients: [
+      {
+        name: 'Beetroot (Beta vulgaris) Powder',
+        nameHindi: 'चुकंदर',
+        description:
+          '100% pure beetroot powder — traditionally used as a nutrient-rich daily nutrition powder to support healthy blood, energy, heart wellness and skin-hair nourishment.',
+      },
+    ],
+    howToUse:
+      'Mix 1 teaspoon of Beetroot Powder in a glass of water, juice, smoothie or recipes once or twice daily, or as directed by your healthcare provider. Store in a cool, dry and hygienic place. Keep the jar tightly closed.',
+    faq: [
+      {
+        question: 'Is this 100% pure Beetroot Powder?',
+        answer:
+          'Yes. The product is marked Pure & Natural / 100% Natural Plant Based and lists Beetroot Powder as the ingredient.',
+      },
+      {
+        question: 'How should I take Beetroot Powder?',
+        answer:
+          'Mix one teaspoon in water, juice, smoothie or food daily. Start with a smaller amount if you are new to beetroot powder.',
+      },
+      {
+        question: 'Can both men and women use it?',
+        answer:
+          'Yes. Beetroot Powder is a daily nutrition powder suitable for adults. Pregnant or nursing women and anyone on medication should consult a doctor first.',
+      },
+      {
+        question: 'How should I store it?',
+        answer: 'Store in a cool, dry and hygienic place with the jar tightly closed.',
+      },
+    ],
+    isCombo: false,
+    createdAt: '2026-11-24',
+    bestSellerRank: 6,
+  },
+
+  {
+    id: 'prod_007',
     slug: 'aloe-vera-juice',
     title: 'Ojasvya Aloe Vera Juice — 500 ml',
     shortTitle: 'Aloe Vera Juice',
     collections: ['digestive-health-detox', 'womens-supplements'],
-    price: 299,
-    compareAtPrice: 399,
+    price: 650,
+    compareAtPrice: 750,
     images: [
       {
         src: `${P}/aloe-vera-juice-bottle-front.jpg`,
@@ -529,7 +613,7 @@ export const products: Product[] = [
     ],
     isCombo: false,
     createdAt: '2026-11-24',
-    bestSellerRank: 6,
+    bestSellerRank: 7,
   },
 ]
 

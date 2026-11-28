@@ -26,11 +26,11 @@ const footerNav = [
     title: 'Products',
     links: [
       { href: '/collections/all', label: 'All Products' },
+      { href: '/collections/combos', label: 'Combo Kits' },
       { href: '/collections/digestive-health-detox', label: 'Digestive & Detox' },
       { href: '/collections/mens-vitamins-supplements', label: "Men's Supplements" },
       { href: '/collections/male-stamina-kits', label: 'Energy & Vitality' },
       { href: '/collections/womens-supplements', label: "Women's Wellness" },
-      { href: '/collections/combos', label: 'Combo Kits' },
     ],
   },
   {
@@ -63,14 +63,24 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-4" aria-label="Ojasvya Ayurveda — Home">
+            <Link
+              href="/"
+              className="inline-flex items-center gap-3 mb-5 rounded-2xl bg-ivory/95 px-3 py-2.5 shadow-sm"
+              aria-label="Ojasvya Ayurveda — Home"
+            >
               <Image
                 src={siteConfig.logo}
                 alt="Ojasvya Ayurveda"
-                width={160}
-                height={64}
-                className="h-14 w-auto object-contain brightness-0 invert"
+                width={200}
+                height={200}
+                className="h-16 w-16 md:h-20 md:w-20 object-contain"
               />
+              <span className="flex flex-col leading-tight pr-1">
+                <span className="font-serif text-xl font-semibold text-forest">Ojasvya</span>
+                <span className="text-[11px] uppercase tracking-[0.18em] text-gold font-medium">
+                  Ayurveda
+                </span>
+              </span>
             </Link>
             <p className="font-devanagari text-gold/80 text-sm mb-3">{siteConfig.tagline}</p>
             <p className="text-ivory/70 text-sm leading-relaxed max-w-xs mb-6">

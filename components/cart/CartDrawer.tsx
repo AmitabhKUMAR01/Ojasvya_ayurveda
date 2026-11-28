@@ -51,8 +51,8 @@ export default function CartDrawer() {
                 <Link href="/collections/all" onClick={closeDrawer} className="block w-full text-center bg-forest text-ivory py-3 px-4 rounded-lg text-sm font-medium hover:bg-forest/90 transition-colors">
                   Shop All Products
                 </Link>
-                <Link href="/collections/male-stamina-kits" onClick={closeDrawer} className="block w-full text-center border border-forest/30 text-forest py-3 px-4 rounded-lg text-sm font-medium hover:bg-sage/50 transition-colors">
-                  Men&apos;s Stamina Kits
+                <Link href="/collections/combos" onClick={closeDrawer} className="block w-full text-center border border-forest/30 text-forest py-3 px-4 rounded-lg text-sm font-medium hover:bg-sage/50 transition-colors">
+                  Shop Combo Kits
                 </Link>
               </div>
             </div>

@@ -20,8 +20,8 @@ export default function FeaturedProducts({ products }: FeaturedProductsProps) {
               Our Most Trusted Products
             </h2>
           </div>
-          <Link href="/collections/all" className="hidden md:flex items-center gap-1.5 text-sm text-forest font-medium hover:text-gold transition-colors shrink-0 ml-4">
-            View all <ArrowRight className="w-4 h-4" />
+          <Link href="/collections/combos" className="hidden md:flex items-center gap-1.5 text-sm text-forest font-medium hover:text-gold transition-colors shrink-0 ml-4">
+            Shop Combo Kits <ArrowRight className="w-4 h-4" />
           </Link>
         </Reveal>
 
@@ -37,10 +37,10 @@ export default function FeaturedProducts({ products }: FeaturedProductsProps) {
         {/* Mobile CTA */}
         <div className="mt-8 text-center md:hidden">
           <Link
-            href="/collections/all"
+            href="/collections/combos"
             className="inline-flex items-center gap-2 border border-forest/30 text-forest px-6 py-3 rounded-lg font-medium text-sm hover:bg-sage/50 transition-colors"
           >
-            View all products <ArrowRight className="w-4 h-4" />
+            Shop Combo Kits <ArrowRight className="w-4 h-4" />
           </Link>
         </div>
       </div>

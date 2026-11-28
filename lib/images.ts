@@ -32,30 +32,41 @@ export type PhotoKey = keyof typeof photos
 
 export const images = {
   hero: {
-    desktop: photos.heroRemedies.src,
-    mobile: photos.ayurvedaBowls.src,
-    alt: photos.heroRemedies.alt,
+    slides: [
+      {
+        src: '/images/hero/herosection.jpg',
+        alt: 'Ojasvya Ayurveda hero — premium Ayurvedic wellness products',
+      },
+      {
+        src: '/images/hero/herosection-01.jpg',
+        alt: 'Ojasvya Ayurveda hero — natural herbal formulations',
+      },
+    ],
+    // Kept for any older single-image references
+    desktop: '/images/hero/herosection.jpg',
+    mobile: '/images/hero/herosection-01.jpg',
+    alt: 'Ojasvya Ayurveda — premium Ayurvedic wellness',
   },
   collections: {
+    combos: {
+      src: '/images/products/madhurex-churna-product-benefits-collage.jpg',
+      alt: 'Madhurex Combo Pack',
+    },
     'digestive-health-detox': {
       src: '/images/products/livirex-ds-syrup-bottle-and-box-front.jpg',
       alt: 'Livirex DX Syrup — digestive health and detox',
+    },
+    'mens-vitamins-supplements': {
+      src: '/images/products/madhurex-capsules-bottle-and-capsules.jpg',
+      alt: "Madhurex Capsules — men's supplements",
     },
     'male-stamina-kits': {
       src: '/images/products/moringa-powder-jar-front.jpg',
       alt: 'Moringa Powder — energy and vitality',
     },
-    'mens-vitamins-supplements': {
-      src: '/images/products/madhurex-capsules-bottle-and-capsules.jpg',
-      alt: 'Madhurex Capsules — men\'s supplements',
-    },
     'womens-supplements': {
       src: '/images/products/aloe-vera-juice-bottle-front.jpg',
-      alt: 'Aloe Vera Juice — women\'s wellness',
-    },
-    combos: {
-      src: '/images/products/madhurex-churna-product-benefits-collage.jpg',
-      alt: 'Madhurex Combo Pack',
+      alt: "Aloe Vera Juice — women's wellness",
     },
   },
   ingredients: {

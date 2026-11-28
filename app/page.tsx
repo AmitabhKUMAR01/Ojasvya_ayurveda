@@ -7,7 +7,6 @@ import { getFeaturedReviews } from '@/data/reviews'
 import HomeHero from '@/components/home/HomeHero'
 import TrustStrip from '@/components/home/TrustStrip'
 import ShopByCollection from '@/components/home/ShopByCollection'
-import IngredientStory from '@/components/home/IngredientStory'
 import FeaturedProducts from '@/components/home/FeaturedProducts'
 import VideoBlock from '@/components/home/VideoBlock'
 import ConsultationSection from '@/components/home/ConsultationSection'
@@ -42,13 +41,10 @@ export default async function HomePage() {
       {/* 2. Trust strip */}
       <TrustStrip />
 
-      {/* 3. Shop by collection — editorial tile grid */}
+      {/* 3. Shop by collection */}
       <ShopByCollection />
 
-      {/* 4. Ingredient story — Ayurveda Ki Taaqat */}
-      <IngredientStory />
-
-      {/* 5. Featured products */}
+      {/* 4. Featured products */}
       <FeaturedProducts products={featuredProducts} />
 
       {/* 6. Brand video block */}

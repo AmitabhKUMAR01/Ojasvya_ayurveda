@@ -2,7 +2,18 @@ import type { CollectionMeta } from '@/types/product'
 
 const P = '/images/products'
 
+/** Order matters — Combo Kits first (primary focus). */
 export const collections: CollectionMeta[] = [
+  {
+    slug: 'combos',
+    title: 'Combo Kits',
+    description:
+      'Value combo packs like Madhurex Capsules + Powder for comprehensive Ayurvedic wellness support.',
+    image: {
+      src: `${P}/madhurex-churna-product-benefits-collage.jpg`,
+      alt: 'Madhurex Combo Pack — capsules and powder',
+    },
+  },
   {
     slug: 'digestive-health-detox',
     title: 'Digestive Health & Detox',
@@ -14,23 +25,23 @@ export const collections: CollectionMeta[] = [
     },
   },
   {
-    slug: 'male-stamina-kits',
-    title: 'Energy & Vitality',
-    description:
-      'Daily nutrition and vitality support with nutrient-rich Moringa Powder — Nature\'s Daily Nutrition for sustained energy.',
-    image: {
-      src: `${P}/moringa-powder-jar-front.jpg`,
-      alt: 'Ojasvya Moringa Powder — energy and vitality',
-    },
-  },
-  {
     slug: 'mens-vitamins-supplements',
     title: "Men's Vitamins & Supplements",
     description:
       'Madhurex formulations and Moringa Powder — Ayurvedic support for metabolic wellness, immunity and everyday nutrition.',
     image: {
       src: `${P}/madhurex-capsules-bottle-and-capsules.jpg`,
-      alt: 'Madhurex Capsules — men\'s wellness supplements',
+      alt: "Madhurex Capsules — men's wellness supplements",
+    },
+  },
+  {
+    slug: 'male-stamina-kits',
+    title: 'Energy & Vitality',
+    description:
+      "Daily nutrition and vitality support with nutrient-rich Moringa Powder — Nature's Daily Nutrition for sustained energy.",
+    image: {
+      src: `${P}/moringa-powder-jar-front.jpg`,
+      alt: 'Ojasvya Moringa Powder — energy and vitality',
     },
   },
   {
@@ -40,17 +51,7 @@ export const collections: CollectionMeta[] = [
       'Aloe Vera Juice and Moringa Powder for glowing skin, healthy hair, immunity and daily nourishment.',
     image: {
       src: `${P}/aloe-vera-juice-bottle-front.jpg`,
-      alt: 'Ojasvya Aloe Vera Juice — women\'s wellness',
-    },
-  },
-  {
-    slug: 'combos',
-    title: 'Combo Kits',
-    description:
-      'Value combo packs like Madhurex Capsules + Powder for comprehensive Ayurvedic wellness support.',
-    image: {
-      src: `${P}/madhurex-churna-product-benefits-collage.jpg`,
-      alt: 'Madhurex Combo Pack — capsules and powder',
+      alt: "Ojasvya Aloe Vera Juice — women's wellness",
     },
   },
 ]
